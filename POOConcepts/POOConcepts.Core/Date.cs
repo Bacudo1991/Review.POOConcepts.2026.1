@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace POOConcepts.Core;
+﻿namespace POOConcepts.Core;
 
 public class Date
 {
@@ -27,7 +25,7 @@ public class Date
         get => _day;
         set
         {
-            _day = value;
+            _day = ValidateDay(value);
         }
     }
     public int Month 
@@ -35,7 +33,7 @@ public class Date
         get => _month;        
         set
         {
-            _month = value;
+            _month = ValidateMonth(value);
         }
     }
     public int Year 
@@ -65,4 +63,27 @@ public class Date
         }
         return year;
     }
+
+    private int ValidateMonth(int month)
+    {
+        if (month < 1 || month > 12)
+        {
+            throw new Exception($"Month: {month}, is not valid.");
+        }
+        return month;        
+    }
+
+    private int ValidateDay(int day)
+    {
+        int maxDay = Month switch
+        {
+            2 => IsLeapYear(Year) ? 29 : 28,
+            4 or 6 or 9 or 11 => 30,
+            _ => 31,
+        };
+
+        if (day >= 1 && day <= maxDay)        
+            return day;
+        throw new Exception($"Day: {day}, is not valid for month: {Month} and year: {Year}.");
+    }     
 }
