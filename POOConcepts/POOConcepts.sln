@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POOConcepts.Core", "POOConcepts.Core\POOConcepts.Core.csproj", "{6709E90A-143A-4F85-8F89-8F047B4319E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POOConcepts.Console", "POOConcepts.Console\POOConcepts.Console.csproj", "{29B65930-87AB-4DB3-B231-F64B0B807505}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6709E90A-143A-4F85-8F89-8F047B4319E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6709E90A-143A-4F85-8F89-8F047B4319E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6709E90A-143A-4F85-8F89-8F047B4319E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6709E90A-143A-4F85-8F89-8F047B4319E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29B65930-87AB-4DB3-B231-F64B0B807505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29B65930-87AB-4DB3-B231-F64B0B807505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29B65930-87AB-4DB3-B231-F64B0B807505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29B65930-87AB-4DB3-B231-F64B0B807505}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F540892-D504-4301-BD4A-D6F8BCFC8737}
+	EndGlobalSection
+EndGlobal
