@@ -14,5 +14,5 @@ public abstract class Employee
     public override string ToString() =>
         $"{Id}\t{Firstname} {Lastname}\n\t" +
         $"Hire date..: {HireDate}\n\t" +
-        $"Salary.....: {GetValueToPay():C2}";    
+        $"Salary.....: {GetValueToPay():C2}";
 }
