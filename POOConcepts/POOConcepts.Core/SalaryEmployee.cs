@@ -13,7 +13,7 @@ public class SalaryEmployee : Employee
 
     public override decimal GetValueToPay() => Salary;
 
-    public override string ToString() => $"{base.ToString}\n\t" +
+    public override string ToString() => $"{base.ToString()}\n\t" +
             $"Salary...: {GetValueToPay():C2}";    
 
     private decimal ValidateSalary(decimal salary)
